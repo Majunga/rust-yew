@@ -19,5 +19,5 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file ./src/Dockerfile -t majunga/rust-yew:$(date +%s) -t majunga/rust-yew:latest
     - name: Push the Docker image
-      run: docker push majunga/rust-yew:$(date +%s) majunga/rust-yew:latest
+      run: docker push -a majunga/rust-yew
     
